@@ -1,0 +1,148 @@
+@media only screen and (max-width: 500px) {
+  /* reuseable component */
+  body {
+    font-size: 16px;
+    overflow-x: hidden;
+  }
+  section {
+    padding: 2rem 1rem;
+  }
+  h2 {
+    text-align: center;
+  }
+  h1 {
+    text-align: center;
+  }
+  /* header */
+  nav {
+    padding: 0 1.3rem;
+  }
+
+  /* nav */
+  .nav-link {
+    display: none;
+  }
+  .download-resume {
+    display: none;
+  }
+  .hero-container .hero-image-box {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+  }
+  /* hamburger */
+  .overlay{
+    position: fixed;
+    inset: 0;
+    background: rgbe(0,0,0,0.5);
+    display: none;
+    z-index: 100;
+  }
+  /* .overlay.active{
+    display: block;
+  } */
+  .menu-btn {
+    display: block;
+    height: 25px;
+    width: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+  }
+  .bar {
+    height: 4px;
+    width: 100%;
+    background: #d7d6d6;
+    border-radius: 2px;
+    transition: all 0.4s ease;
+    color: white;
+  }
+  .hamburger {
+    list-style: none;
+    position: fixed;
+    right: 0;
+    top: 70px;
+    background: #0d0d0d;
+    text-align: center;
+    padding: 2rem 1rem;
+    border-radius: 5px;
+    text-transform: capitalize;
+    font-size: 105%;
+    display: none;
+  }
+  .hamburger.open{
+    display: block;
+  }
+  .hamburger li {
+    padding: 1.5rem;
+  }
+  .hamburger li:hover {
+    background-color: #2a2a2a;
+    border-radius: 7px;
+  }
+  .hamburger a {
+    text-decoration: none;
+    color: #d7d6d6;
+  }
+  .menu-btn.active .bar:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+  .menu-btn.active .bar:nth-child(2){
+    opacity: 0;
+  } 
+  .menu-btn.active .bar:nth-child(3) {
+    transform: rotate(-45deg) translate(9px, -9px);
+  }
+
+  /* about */
+  .row {
+    flex-direction: column;
+  }
+  .col {
+    width: 100%;
+  }
+  .about-avatar {
+    height: 350px;
+    width: 350px;
+    margin: 0 auto 1rem auto;
+  }
+  .esc-box {
+    text-align: center;
+  }
+  .see-more {
+    margin-top: 10px;
+  }
+  /* featured section */
+  .projects-container {
+    flex-direction: column;
+    margin: 0 auto;
+    margin-top: 1rem;
+  }
+  .project-card {
+    width: 70%;
+    margin: 0 auto 1.5rem auto;
+  }
+  /* skills */
+  .skill-container {
+    flex-direction: column;
+  }
+  .skill-card {
+    margin: 0 auto 1.5rem auto;
+  }
+  /* reviews */
+  .testimonial-firstPart {
+    text-align: center;
+  }
+  /* contact me */
+  .contact-info {
+    padding: 0 2rem;
+  }
+  .contact-social {
+    margin-left: 5rem;
+    margin-top: 4rem;
+  }
+  .contact-form {
+    margin-top: 2rem;
+  }
+}
